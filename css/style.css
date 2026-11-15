@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -81,22 +83,26 @@ nav a {
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: nowrap;
 }
+
+
 
 /* ==============================
    CARDS - ESTRUTURA
 ================================= */
 
 .card {
+    
     position: relative;
     isolation: isolate;
     overflow: hidden;
 
     background-color: white;
     padding: 25px;
-    width: 280px;
+    width: 700px;
 
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -192,14 +198,17 @@ nav a {
 /* Cores individuais dos botões */
 
 #card-bio a:hover {
-    background-color: #0aa521;
+    opacity: 0.75;
+    background-color: #007a12;
 }
 
 #card-qui a:hover {
-    background-color: #a50a8e;
+    opacity: 0.75;
+    background-color: #e32ac7;
 }
 
 #card-mat a:hover {
+    opacity: 0.75;
     background-color: #0a4ba5;
 }
 

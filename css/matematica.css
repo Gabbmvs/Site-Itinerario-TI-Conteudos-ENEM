@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -76,6 +79,7 @@ nav a:hover {
     position: relative;
     overflow: hidden;
 
+
     background: white;
     padding: 25px;
 
@@ -108,6 +112,7 @@ nav a:hover {
 }
 
 .card:hover {
+    background-color: #9ecefd6f;
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
