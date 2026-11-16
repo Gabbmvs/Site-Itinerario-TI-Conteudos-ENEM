@@ -65,10 +65,16 @@ nav a:hover {
 .card {
     position: relative;
     overflow: hidden;
+
+
     background: white;
     padding: 25px;
+
     border: 1px solid #ddd;
     border-radius: 5px;
+
+    flex: 0 1 250px;
+
     transition: 0.3s ease;
 }
 

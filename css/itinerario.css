@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4b7;
+    color: #333;
+}
+
+/* ==============================
+   CABEÇALHO
+================================= */
+
+header {
+    background-color: #110e47;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+footer {
+    background-color: #263b50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+.container-quem-somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+}
+
+.imagem-quem-somos {
+    width: 45%;
+}
+
+.imagem-quem-somos img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.quem-somos {
+    width: 50%;
+    padding: 30px;
+}
+
+
+/* ========================================
+   SEÇÃO APRENDIZADOS
+======================================== */
+
+#aprendizado {
+    padding: 70px 8%;
+    background-color: #f4f6f8;
+}
+
+
+/* ========================================
+   TÍTULO DA SEÇÃO
+======================================== */
+
+.titulo-aprendizado {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo-aprendizado h1 {
+    color: #1f3c5b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.titulo-aprendizado p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   LINHA CENTRAL DA TIMELINE
+======================================== */
+
+.linha-tempo {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Linha vertical */
+.linha-tempo::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #1f3c5b;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+
+/* ========================================
+   ETAPAS DA TIMELINE
+======================================== */
+
+.item-tempo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 250px;
+
+    padding: 30px 0;
+    gap: 80px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   ALTERNÂNCIA DOS LADOS
+======================================== */
+
+/* 1ª e 3ª etapas: texto à esquerda */
+.item-tempo:nth-child(odd) .conteudo-tempo {
+    order: 1;
+    text-align: right;
+}
+
+.item-tempo:nth-child(odd) .midia-tempo {
+    order: 2;
+}
+
+/* 2ª e 4ª etapas: texto à direita */
+.item-tempo:nth-child(even) .conteudo-tempo {
+    order: 2;
+    text-align: left;
+}
+
+.item-tempo:nth-child(even) .midia-tempo {
+    order: 1;
+}
+
+
+/* ========================================
+   TAMANHO DOS ELEMENTOS
+======================================== */
+
+.conteudo-tempo,
+.midia-tempo {
+    width: calc(42% - 40px);
+    min-width: 0;
+}
+
+
+/* ========================================
+   CARTÕES DE TEXTO
+======================================== */
+
+.conteudo-tempo {
+    background-color: white;
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.conteudo-tempo:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ========================================
+   INFORMAÇÕES DOS CARTÕES
+======================================== */
+
+.ano {
+    color: #c0392b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.conteudo-tempo h2 {
+    color: #1f3c5b;
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.conteudo-tempo p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   ETIQUETAS DAS FERRAMENTAS
+======================================== */
+
+.ferramenta {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 7px 12px;
+
+    background-color: #e8eef5;
+    color: #1f3c5b;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   IMAGENS
+======================================== */
+
+.midia-tempo img {
+    display: block;
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease;
+}
+
+.midia-tempo img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   MARCADORES DA LINHA CENTRAL
+======================================== */
+
+.item-tempo::after {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: white;
+    border: 4px solid #1f3c5b;
+
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 800px) {
+
+    #aprendizado {
+        padding: 50px 20px;
+    }
+
+    /* Linha deslocada para a esquerda */
+    .linha-tempo::before {
+        left: 12px;
+    }
+
+    /* Etapas empilhadas */
+    .item-tempo {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 20px 0 20px 40px;
+
+        gap: 15px;
+    }
+
+    /* Texto e imagem ocupam toda a largura */
+    .conteudo-tempo,
+    .midia-tempo {
+        width: 100%;
+    }
+
+    /* Texto sempre aparece primeiro */
+    .item-tempo:nth-child(odd) .conteudo-tempo,
+    .item-tempo:nth-child(even) .conteudo-tempo {
+        order: 1;
+        text-align: left;
+    }
+
+    /* Imagem sempre aparece depois */
+    .item-tempo:nth-child(odd) .midia-tempo,
+    .item-tempo:nth-child(even) .midia-tempo {
+        order: 2;
+    }
+
+    /* Marcadores */
+    .item-tempo::after {
+        left: 12px;
+        top: 30px;
+    }
+
+    /* Imagens no celular */
+    .midia-tempo img {
+        height: 220px;
+    }
+
+    /* Títulos */
+    .titulo-aprendizado h1 {
+        font-size: 25px;
+    }
+
+    .conteudo-tempo h2 {
+        font-size: 19px;
+    }
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #111;
+}
+
+/* Área das imagens */
+.carrossel-imagens {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cada slide */
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.slide.ativo {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+/* Imagens */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Legenda */
+.legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px;
+    color: white;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.85)
+    );
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.legenda h3 {
+    margin-bottom: 5px;
+}
+
+.legenda p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Setas */
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proxima {
+    right: 10px;
+}
+
+/* Indicadores */
+.indicadores {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 4;
+}
+
+.ponto {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.ponto.ativo {
+    background-color: white;
+    transform: scale(1.3);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+
+    .carrossel {
+        height: 260px;
+        max-width: 100%;
+    }
+
+    .legenda {
+        padding: 20px 15px;
+    }
+
+    .legenda h3 {
+        font-size: 17px;
+    }
+
+    .legenda p {
+        font-size: 12px;
+    }
+
+    .seta {
+        padding: 9px;
+    }
+
+}
+@media (max-width: 700px) {
+
+    #aprendizado {
+        padding: 50px 20px;
+    }
+
+    .linha-tempo::before {
+        left: 12px;
+    }
+
+    .item-tempo {
+        width: 100%;
+        left: 0 !important;
+        padding: 15px 0 15px 40px;
+        text-align: left !important;
+    }
+
+    .item-tempo::after {
+        left: 1px !important;
+        right: auto !important;
+    }
+
+    .titulo-aprendizado h1 {
+        font-size: 25px;
+    }
+
+    .conteudo-tempo h2 {
+        font-size: 19px;
+    }
+}
