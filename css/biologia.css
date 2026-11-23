@@ -33,17 +33,24 @@ nav a:hover {
 }
 
 .introducao {
-    background: white;
+    background:  rgb(13, 82, 1);;
     text-align: center;
     padding: 60px 20px;
+}
+.biologia img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .introducao h2 {
     margin-bottom: 15px;
+    color: white;
 }
 
 .introducao p {
-    color: #666;
+    color: #ffffff;
 }
 
 .trabalhos {

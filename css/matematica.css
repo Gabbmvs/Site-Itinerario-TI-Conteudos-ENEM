@@ -40,23 +40,25 @@ nav a:hover {
 /* Introdução */
 
 .introducao {
-    background: white;
+    background: rgb(2, 47, 66);
     text-align: center;
     padding: 60px 20px;
 }
 
 .introducao h2 {
     margin-bottom: 15px;
+    color: white;
 }
 
 .introducao p {
-    color: #666;
+    color: #ffffff;
 }
 
 /* Trabalhos */
 
 .trabalhos {
     padding: 50px 8%;
+    
 }
 
 .trabalhos > h2 {
@@ -158,6 +160,13 @@ nav a:hover {
 
 .card a:active {
     transform: translateY(0);
+}
+
+.matematica img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Rodapé */

@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: #4f2650;
+    background: rgb(177, 2, 124);
     color: white;
     padding: 20px 8%;
     display: flex;
@@ -33,17 +33,25 @@ nav a:hover {
 }
 
 .introducao {
-    background: white;
+    background: rgb(112, 0, 78);
     text-align: center;
     padding: 60px 20px;
 }
+.quimica img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 .introducao h2 {
     margin-bottom: 15px;
+    color: white;
 }
 
 .introducao p {
-    color: #666;
+    color: #ffffff;
 }
 
 .trabalhos {
@@ -129,7 +137,7 @@ nav a:hover {
 }
 
 footer {
-    background: #50264a;
+    background: rgb(177, 2, 124);
     color: white;
     padding: 20px;
     text-align: center;
