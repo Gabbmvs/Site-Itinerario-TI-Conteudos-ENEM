@@ -6,6 +6,20 @@
 html{
     scroll-behavior: smooth;
 }
+/* Remove o sublinhado e muda a cor de todos os links */
+#projetos a {
+  text-decoration: none;
+  color: #00a6d8; /* Azul claro para destacar no fundo escuro (ou use #ffffff para branco) */
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Efeito opcional ao passar o mouse por cima */
+#projetos a:hover {
+  text-decoration: underline;
+  color: #00eeff;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4b7;

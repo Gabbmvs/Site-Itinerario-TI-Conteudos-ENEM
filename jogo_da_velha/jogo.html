@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo da Velha</title>
+
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Jogo da Velha</h1>
+            <p>Divirta-se com uma partida!</p>
+        </header>
+
+        <section class="game">
+
+            <div class="status">
+                <span id="status">Vez do jogador X</span>
+            </div>
+
+            <div class="board" id="board">
+
+                <button class="cell" data-index="0"></button>
+                <button class="cell" data-index="1"></button>
+                <button class="cell" data-index="2"></button>
+
+                <button class="cell" data-index="3"></button>
+                <button class="cell" data-index="4"></button>
+                <button class="cell" data-index="5"></button>
+
+                <button class="cell" data-index="6"></button>
+                <button class="cell" data-index="7"></button>
+                <button class="cell" data-index="8"></button>
+
+            </div>
+
+            <div class="scoreboard">
+
+                <div class="score">
+                    <span class="player-x">Jogador X</span>
+                    <strong id="scoreX">0</strong>
+                </div>
+
+                <div class="score">
+                    <span class="player-o">Jogador O</span>
+                    <strong id="scoreO">0</strong>
+                </div>
+
+            </div>
+
+            <button id="reset" class="reset-button">
+                Reiniciar partida
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="jogo.js"></script>
+
+</body>
+</html>
