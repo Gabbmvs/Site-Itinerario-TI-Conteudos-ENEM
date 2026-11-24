@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: #054225;
+    background: rgb(13, 82, 1);
     color: white;
     padding: 20px 8%;
     display: flex;
@@ -33,7 +33,7 @@ nav a:hover {
 }
 
 .introducao {
-    background:  rgb(13, 82, 1);;
+    background:  #054225;
     text-align: center;
     padding: 60px 20px;
 }
