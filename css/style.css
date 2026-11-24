@@ -231,6 +231,9 @@ nav a {
 .sobre h2 {
     margin-bottom: 15px;
 }
+.sobre p{
+    text-align: justify;
+}
 
 /* ==============================
    RODAPÉ
