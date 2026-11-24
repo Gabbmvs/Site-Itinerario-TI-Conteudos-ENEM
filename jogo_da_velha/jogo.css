@@ -1,4 +1,11 @@
-
+:root{
+    --azulao: #0B132B;
+    --azul-marinho: #1C2541;
+    --cinza-azulado: #3A506B;
+    --ciano: #5BC0BE;
+    --branco: #ffff;
+    
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +14,14 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f8f9fa;
+    background-color: var(--azulao);
     min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: #202124;
+    color: #ffffff;
 }
 
 .container {
@@ -26,6 +33,7 @@ body {
 
 header {
     margin-bottom: 30px;
+    color: white;
 }
 
 header h1 {
@@ -34,16 +42,16 @@ header h1 {
 }
 
 header p {
-    color: #5f6368;
+    color: #ffffff;
     font-size: 15px;
 }
 
 .game {
-    background: white;
+    background: var(--azul-marinho);
     padding: 25px;
     border-radius: 18px;
 
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 12px rgba(48, 199, 245, 0.767);
 }
 
 .status {
@@ -64,7 +72,7 @@ header p {
 .cell {
     border: none;
     border-radius: 12px;
-    background: #f1f3f4;
+    background: var(--cinza-azulado);
 
     font-size: 55px;
     font-weight: bold;
@@ -74,7 +82,7 @@ header p {
 }
 
 .cell:hover:not(:disabled) {
-    background: #e8eaed;
+    background: var(--ciano);
 }
 
 .cell:active:not(:disabled) {
@@ -86,15 +94,15 @@ header p {
 }
 
 .cell.x {
-    color: #4285f4;
+    color: var(--ciano);
 }
 
 .cell.o {
-    color: #ea4335;
+    color: #ff8800;
 }
 
 .cell.winner {
-    background: #d9ead3;
+    background: #00571da4;
 }
 
 .scoreboard {
@@ -103,7 +111,7 @@ header p {
     margin: 25px 0;
 
     padding: 15px;
-    background: #f8f9fa;
+    background: var(--cinza-azulado);
     border-radius: 12px;
 }
 
@@ -118,12 +126,12 @@ header p {
 }
 
 .player-x {
-    color: #4285f4;
+    color: var(--ciano);
     font-weight: bold;
 }
 
 .player-o {
-    color: #ea4335;
+    color: #ff8800;
     font-weight: bold;
 }
 
@@ -134,7 +142,7 @@ header p {
     border: none;
     border-radius: 25px;
 
-    background: #4285f4;
+    background: var(--cinza-azulado);
     color: white;
 
     font-size: 15px;
@@ -145,7 +153,7 @@ header p {
 }
 
 .reset-button:hover {
-    background: #3367d6;
+    background: #354a77;
 }
 
 @media (max-width: 400px) {

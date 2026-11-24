@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PyBot | Assistente Virtual</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="chat-container">
+
+        <header class="chat-header">
+            <div class="bot-avatar">P</div>
+
+            <div class="bot-info">
+                <h1>PyBot</h1>
+                <p><span class="status"></span> Assistente virtual online</p>
+            </div>
+        </header>
+
+        <section class="chat-messages" id="mensagens">
+
+            <div class="message bot-message">
+                <div class="message-avatar">P</div>
+
+                <div class="message-content">
+                    <p>Olá! Eu sou o PyBot. Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+
+        </section>
+
+        <form class="chat-input" id="formulario">
+            <input
+                type="text"
+                id="mensagem"
+                placeholder="Digite sua mensagem..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit" id="botao-enviar">
+                Enviar
+            </button>
+        </form>
+
+        <footer class="chat-footer">
+            PyBot — Desenvolvido com Python e inteligência artificial.
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
