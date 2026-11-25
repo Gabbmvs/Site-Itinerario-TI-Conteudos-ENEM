@@ -82,7 +82,7 @@ header p {
 }
 
 .cell:hover:not(:disabled) {
-    background: var(--ciano);
+    background: #005050;
 }
 
 .cell:active:not(:disabled) {
