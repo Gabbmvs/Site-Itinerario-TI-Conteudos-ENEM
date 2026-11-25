@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Invaders - Itinerário de Tecnologia</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>👾 BUG INVADERS</h1>
+    <p>Itinerário de Tecnologia • Defenda o servidor contra os bugs!</p>
+  </header>
+
+  <main class="container">
+    <section class="arcade-box">
+      <div class="hud">
+        <span>Pontos: <strong id="score">0</strong></span>
+        <span>Nível: <strong id="level">1</strong></span>
+        <span>Vidas: <strong id="lives">3</strong></span>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="gameCanvas" width="600" height="450"></canvas>
+
+        <!-- Tela inicial -->
+        <div id="startOverlay" class="overlay">
+          <h2>PRONTO PARA DEPLOY?</h2>
+          <p>Use <strong>← →</strong> ou <strong>A / D</strong> para mover e <strong>Espaço</strong> para atirar.</p>
+          <button id="startBtn">Iniciar Jogo</button>
+        </div>
+
+        <!-- Tela de Game Over -->
+        <div id="gameOverOverlay" class="overlay hidden">
+          <h2 id="endTitle">SISTEMA COMPROMETIDO!</h2>
+          <p>Sua pontuação: <strong id="finalScore">0</strong></p>
+          <form id="scoreForm">
+            <input
+              type="text"
+              id="playerName"
+              placeholder="Seu nome ou apelido"
+              maxlength="15"
+              required
+            />
+            <button type="submit">Salvar no Ranking</button>
+          </form>
+          <button id="restartBtn" class="secondary">Jogar Novamente</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="ranking-box">
+      <h2>🏆 Top 10 Dev Defenders</h2>
+      <ol id="rankingList">
+        <li>Carregando ranking...</li>
+      </ol>
+    </aside>
+  </main>
+
+  <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
