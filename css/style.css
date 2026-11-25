@@ -58,11 +58,14 @@ nav a {
 .inicio {
     text-align: center;
     padding: 60px 20px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.096);
 }
 
 .inicio h2 {
     margin-bottom: 15px;
+}
+.inicio p{
+    font-size: large;
 }
 
 /* ==============================
@@ -72,6 +75,7 @@ nav a {
 .disciplinas {
     padding: 50px 8%;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .disciplinas h2 {
@@ -86,6 +90,7 @@ nav a {
     align-items: stretch;
     gap: 25px;
     flex-wrap: nowrap;
+    
 }
 
 
@@ -104,7 +109,7 @@ nav a {
     padding: 25px;
     width: 700px;
 
-    border: 1px solid #ddd;
+    border: 1px solid #00000028;
     border-radius: 5px;
 
     transition: transform 0.3s ease,
@@ -223,18 +228,42 @@ nav a {
 ================================= */
 
 .sobre {
-    background-color: white;
-    padding: 40px 8%;
-    text-align: center;
+    background-color: #110e47;
+    padding: 20px 90px;
+    text-align: justify;
+    color: white;
+    border-radius: 25px;
+    margin-block: 50px;
+    
+    
+}
+.sobre hr{
+    width: 20%;
+    height: 3px;
+    transform: translateY(-10px);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
 }
 
 .sobre h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .sobre p{
     text-align: justify;
 }
 
+/* ==============================
+   VIDEO ASTOR
+================================= */
+.video_astor{
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 35px;
+    overflow: hidden;
+}
 /* ==============================
    RODAPÉ
 ================================= */
