@@ -57,62 +57,6 @@ nav a:hover{
    BOTÕES DAS REDES SOCIAIS
 ======================================== */
 
-.links-sociais {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.botao-social {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 12px 22px;
-
-    color: white;
-    text-decoration: none;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    transition: transform 0.3s ease,
-                background-color 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.botao-social svg {
-    width: 22px;
-    height: 22px;
-    fill: currentColor;
-}
-
-/* GitHub */
-.github {
-    background-color: #24292f;
-}
-
-.github:hover {
-    background-color: #000000;
-    transform: translateY(-4px);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
-}
-
-/* LinkedIn */
-.linkedin {
-    background-color: #0a66c2;
-}
-
-.linkedin:hover {
-    background-color: #004182;
-    transform: translateY(-4px);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
-}
 
 /* ==============================
    LOGO
@@ -333,21 +277,26 @@ nav a:hover{
 /* ==============================
    VIDEO ASTOR
 ================================= */
-.video_astor{
+
+.video_astor {
     width: 100%;
     max-width: 700px;
     aspect-ratio: 16 / 9;
+
     border-radius: 15px;
     overflow: hidden;
-    margin: 0px 300px;
-    margin: block;
+
+    margin: 0 auto;
 }
-.video_astor video{
+
+.video_astor video {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     display: block;
 }
+
 /* ==============================
    RODAPÉ
 ================================= */
