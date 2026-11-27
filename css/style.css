@@ -30,6 +30,27 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+nav a {
+   
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+
+    background-color: #002c93;
+    color: white;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+    
+}
+nav a:hover{
+    background-color: #f4f4f4;
+    color: #020035;
+}
 
 
 /* ========================================
@@ -318,7 +339,7 @@ header {
     aspect-ratio: 16 / 9;
     border-radius: 15px;
     overflow: hidden;
-    margin: 0px 260px;
+    margin: 0px 300px;
     margin: block;
 }
 .video_astor video{

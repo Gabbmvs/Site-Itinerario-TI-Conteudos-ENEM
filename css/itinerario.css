@@ -848,3 +848,23 @@ footer {
     }
 
 }
+.github {
+    background-color: #24292f;
+}
+
+.github:hover {
+    background-color: #000000;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #0a66c2;
+}
+
+.linkedin:hover {
+    background-color: #004182;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
