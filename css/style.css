@@ -31,27 +31,68 @@ header {
     align-items: center;
 }
 
-nav a {
-   
-    text-decoration: none;
-    margin-left: 20px;
-    display: inline-block;
 
-    background-color: #002c93;
+/* ========================================
+   BOTÕES DAS REDES SOCIAIS
+======================================== */
+
+.links-sociais {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.botao-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 22px;
+
     color: white;
-
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 4px;
 
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
-    
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
 }
-nav a:hover{
-    background-color: #f4f4f4;
-    color: #020035;
+
+.botao-social svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
 }
+
+/* GitHub */
+.github {
+    background-color: #24292f;
+}
+
+.github:hover {
+    background-color: #000000;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #0a66c2;
+}
+
+.linkedin:hover {
+    background-color: #004182;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
 /* ==============================
    LOGO
 ================================= */
