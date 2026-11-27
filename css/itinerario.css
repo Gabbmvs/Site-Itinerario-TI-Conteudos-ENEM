@@ -40,10 +40,27 @@ header {
     align-items: center;
 }
 
+
 nav a {
-    color: white;
+   
     text-decoration: none;
     margin-left: 20px;
+    display: inline-block;
+
+    background-color: #002c93;
+    color: white;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+    
+}
+nav a:hover{
+    background-color: #f4f4f4;
+    color: #020035;
 }
 footer {
     background-color: #263b50;
@@ -80,10 +97,16 @@ footer {
 .imagem-quem-somos img {
     width: 400px;
     height: 500px;
-    object-fit: cover;
-    border-radius: 50px;
+    object-fit: fill;
+    border-radius: 30px;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    
 }
-
+.imagem-quem-somos img:hover{
+     transform: scale(1.03);
+}
 
 .quem-somos {
     width: 100%;
@@ -92,10 +115,15 @@ footer {
     color: white;
     border-radius: 50px;
     text-align: justify;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
     
     
 }
-
+.quem-somos:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
 /* ========================================
    SEÇÃO APRENDIZADOS
@@ -104,6 +132,7 @@ footer {
 #aprendizado {
     padding: 70px 8%;
     background-color: #f4f6f8;
+    margin-top: -90px;
 }
 
 
@@ -489,8 +518,8 @@ footer {
 .slide video{
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    display: block;
+    object-fit: fill;
+    display: flex;
 }
 
 /* Legenda */
@@ -624,4 +653,198 @@ footer {
     .conteudo-tempo h2 {
         font-size: 19px;
     }
+}
+
+
+
+
+
+
+
+/* ========================================
+   SEÇÃO PROFESSORA E ALUNO
+======================================== */
+
+.sobre-nos {
+    padding: 50px 8%;
+    background-color: #f4f6f8;
+}
+
+.sobre-nos h1 {
+    color: #1f3c5b;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-nos hr {
+    width: 37%;
+    height: 3px;
+    margin: 0 auto 50px;
+    background-color: #1f3c5b;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ========================================
+   ESTRUTURA DOS CONTAINERS
+======================================== */
+
+.container-professora,
+.container-aluno {
+    display: flex;
+   
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* ========================================
+   ALTERNÂNCIA DOS LADOS
+======================================== */
+
+/* Professora: imagem à esquerda */
+.container-professora .imagem-professora {
+    order: 1;
+}
+
+.container-professora .texto-professora {
+    order: 2;
+}
+
+/* Aluno: texto à esquerda */
+.container-aluno .texto-aluno {
+    order: 1;
+}
+
+.container-aluno .imagem-aluno {
+    order: 2;
+}
+
+/* ========================================
+   TAMANHO DOS ELEMENTOS
+======================================== */
+
+.imagem-professora,
+.imagem-aluno,
+.texto-professora,
+.texto-aluno {
+    width: calc(50% - 25px);
+    min-width: 0;
+}
+
+/* ========================================
+   IMAGENS
+======================================== */
+
+.imagem-professora img,
+.imagem-aluno img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.imagem-professora img:hover,
+.imagem-aluno img:hover {
+    transform: scale(1.03);
+}
+
+/* ========================================
+   CARTÕES DE TEXTO
+======================================== */
+
+.texto-professora,
+.texto-aluno {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #110e47;
+    color: white;
+    border-radius: 30px;
+    text-align: justify;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.texto-professora:hover,
+.texto-aluno:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================================
+   INFORMAÇÕES DOS CARTÕES
+======================================== */
+
+.texto-professora h2,
+.texto-aluno h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.texto-professora p,
+.texto-aluno p {
+    color: white;
+    line-height: 1.7;
+}
+.texto-aluno a{
+    text-decoration: none;
+    
+    display: inline-block;
+
+    background-color: #0d066e;
+    color: white;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+.texto-aluno a:hover{
+     background-color: #f4f4f4;
+    color: #0055ff;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .container-professora,
+    .container-aluno {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagem-professora,
+    .imagem-aluno,
+    .texto-professora,
+    .texto-aluno {
+        width: 100%;
+    }
+
+    /* No celular, texto primeiro */
+    .container-professora .texto-professora,
+    .container-aluno .texto-aluno {
+        order: 1;
+    }
+
+    .container-professora .imagem-professora,
+    .container-aluno .imagem-aluno {
+        order: 2;
+    }
+
+    .imagem-professora img,
+    .imagem-aluno img {
+        height: 700px;
+    }
+
 }

@@ -23,15 +23,26 @@ header {
 }
 
 nav a {
-    color: white;
+   
     text-decoration: none;
     margin-left: 20px;
-}
+    display: inline-block;
 
-nav a:hover {
-    color: #296d3c;
-}
+    background-color: #04b50a;
+    color: white;
 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+    
+}
+nav a:hover{
+    background-color: #f4f4f4;
+    color: #00650e;
+}
 .introducao {
     background:  #054225;
     text-align: center;
